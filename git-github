@@ -1,0 +1,14 @@
+# Sprawdzenie statusu
+git status
+
+# Dodanie plików do staging area
+git add .
+
+# Zatwierdzenie zmian z opisem
+git commit -m "Dodano komentarze i instrukcje, zaktualizowano README"
+
+# Pobranie aktualizacji z GitHub (opcjonalne, ale zalecane)
+git pull origin main
+
+# Wypchnięcie zmian na GitHub
+git push origin main
