@@ -1,6 +1,19 @@
 spectrum_analysis_ep/
-├── config.yaml
-├── spectrum_analysis.py
-├── requirements.txt
-├── .gitignore
-└── README.md
+├── spectrum_analysis.py      # Główny skrypt programu
+├── requirements.txt          # Plik z zależnościami
+├── README.md                 # Dokumentacja projektu
+├── LICENSE                   # Informacje o licencji
+├── .gitignore                # Plik konfiguracji Git
+├── config.yaml               # Plik konfiguracyjny
+├── data/                     # Folder z danymi wejściowymi
+│   ├── input1.dat            # Przykładowy plik danych
+│   ├── input2.dat            # Kolejny plik danych
+│   ├── sample3.dat           # Inny plik danych
+│   └── exclude               # Plik z nazwami plików do wykluczenia (opcjonalny)
+└── output/                   # Folder z wynikami (generowany automatycznie)
+    ├── input1_pcal1_autocorr.png          # Wykres funkcji autokorelacyjnej 1
+    ├── input1_pcal1_fft.png                # Wykres widma mocy 1
+    ├── input1_pcal1_interactive.html       # Interaktywny wykres widma mocy 1
+    ├── input1_pcal1_intermediate.json      # Pośrednie wyniki obliczeń 1
+    ├── raport.html                         # Raport HTML z wynikami analizy
+    └── ...                                 # Inne wyniki analizy

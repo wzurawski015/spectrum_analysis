@@ -1,0 +1,3 @@
+Use
+python spectrum_analysis.py --config config.yaml
+

@@ -1,3 +1,4 @@
+python spectrum_analysis.py --config config.yaml
 # Sprawdzenie statusu
 git status
 
