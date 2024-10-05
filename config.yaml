@@ -1,23 +1,14 @@
-# config.yaml
 
-# Częstotliwość próbkowania w Hz
-fs: 1000
+### Plik konfiguracyjny: `config.yaml`
 
-# Katalogi
-data_dir: 'data'
-exclude_file: 'data/exclude'
-output_dir: 'output'
-
-# Parametry autokorelacji
-num_functions: 4
-samples_per_function: 4097
-
-# Logowanie
-log_file: 'spectrum_analysis.log'
-log_level: 'INFO'
-
-# FFT
-fft_type: 'rfft'  # Możliwe wartości: 'fft', 'rfft'
-
-# Raport
-report_file: 'raport.html'
+```yaml
+data_dir: 'data/'                   # Katalog z danymi do analizy
+exclude_file: 'exclude_list.txt'     # Plik z listą wykluczeń
+output_dir: 'output/'                # Katalog, gdzie zapisywane są wyniki
+sampling_frequency: 1000             # Częstotliwość próbkowania danych
+num_functions: 10                    # Liczba funkcji autokorelacyjnych
+samples_per_function: 1024           # Liczba próbek na funkcję
+log_file: 'spectrum_analysis.log'    # Plik z logami
+log_level: 'INFO'                    # Poziom logowania
+fft_type: 'rfft'                     # Typ FFT: fft, rfft, dct
+report_file: 'raport.html'           # Plik wyjściowy z raportem HTML

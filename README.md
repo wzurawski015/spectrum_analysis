@@ -1,3 +1,46 @@
+# Spectrum Analysis Tool
+
+Narzędzie do analizy spektralnej danych autokorelacyjnych.
+
+## Funkcje:
+- Symetryzacja funkcji autokorelacyjnej.
+- Usuwanie składowej stałej (DC offset).
+- Obliczanie FFT i widma mocy za pomocą `pyFFTW`.
+- Wybór różnych typów transformacji (FFT, rFFT, DCT).
+- Generowanie dynamicznego raportu HTML z wynikami.
+- Obsługa błędów przy wczytywaniu plików i analizie.
+
+## Instalacja
+
+1. Sklonuj repozytorium:
+    ```bash
+    git clone https://github.com/TWOJ_USERNAME/spectrum_analysis_tool.git
+    cd spectrum_analysis_tool
+    ```
+
+2. Zainstaluj wymagane pakiety:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Konfiguracja
+
+Skonfiguruj narzędzie za pomocą pliku `config.yaml` (przykład poniżej).
+
+```yaml
+data_dir: 'data/'
+output_dir: 'output/'
+sampling_frequency: 1000
+num_functions: 10
+samples_per_function: 1024
+log_file: 'spectrum_analysis.log'
+log_level: 'INFO'
+fft_type: 'rfft'
+report_file: 'raport.html'
+
+
+
+
 Spectrum Analysis
 Autorzy
 Wojciech Żurawski – GitHub | watwzwp@gmail.com
